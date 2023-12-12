@@ -10,4 +10,7 @@
 
 export function sortNumbers(numbers: number[]): number[] {
   // 在此實現函式
+  // return numbers.sort() 
+  //sort 預設是使用 字串排序, 要進行數字排序 需要使用比較函式
+  return numbers.sort((a, b) => a - b);
 }
